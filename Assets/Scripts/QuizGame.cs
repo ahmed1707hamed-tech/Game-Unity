@@ -227,7 +227,21 @@ public class QuizGame : MonoBehaviour
     //displaying final result 
     void DisplayResults()
     {
-        resultText.text = "Super!";
+        resultText.text = "Great!";
+        
+        // Localize UI buttons
+        Text[] texts = finalResultPanel.GetComponentsInChildren<Text>(true);
+        foreach (Text t in texts)
+        {
+            if (t.text.Trim().IndexOf("Zagraj", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Play Again";
+            }
+            else if (t.text.Trim().IndexOf("gry", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Exit Game";
+            }
+        }
     }
 
     //restart level

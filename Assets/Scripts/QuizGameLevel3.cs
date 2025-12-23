@@ -56,7 +56,7 @@ public class QuizGameLevel3 : MonoBehaviour
         while (timeLeft > -1)
         {
             
-            timeText.text = "Czas: " + timeLeft;
+            timeText.text = "Time: " + timeLeft;
             timeButton.GetComponent<Image>().color = new Color32(a, b, 52, 255); ;
             yield return new WaitForSeconds(1.0f);
             timeLeft--;
@@ -90,7 +90,7 @@ public class QuizGameLevel3 : MonoBehaviour
         score = 0;
         questionsDone = 0;
         newQuestion();
-        scoreText.text = "wynik: 0/0";
+        scoreText.text = "Score: 0/0";
         StartCoroutine(StartCountdown(30));
 
     }
@@ -245,7 +245,7 @@ public class QuizGameLevel3 : MonoBehaviour
         //feedbackText.SetActive(false);
         feedbackButton.SetActive(false);
         questionsDone++;
-        scoreText.text = "wynik: " + score.ToString() + "/" + questionsDone.ToString();
+        scoreText.text = "Score: " + score.ToString() + "/" + questionsDone.ToString();
         
         newQuestion();
 
@@ -256,7 +256,21 @@ public class QuizGameLevel3 : MonoBehaviour
     //displaying final result 
     void DisplayResults()
     {
-        resultText.text = "Wynik: " + score;
+        resultText.text = "Score: " + score;
+        
+        // Localize UI buttons
+        Text[] texts = finalResultPanel.GetComponentsInChildren<Text>(true);
+        foreach (Text t in texts)
+        {
+            if (t.text.Trim().IndexOf("Zagraj", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Play Again";
+            }
+            else if (t.text.Trim().IndexOf("gry", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Exit Game";
+            }
+        }
     }
    
 

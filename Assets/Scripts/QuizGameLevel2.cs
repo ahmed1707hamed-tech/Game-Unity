@@ -46,7 +46,7 @@ public class QuizGameLevel2 : MonoBehaviour
         score = 0;
         questionsDone = 0;
         newQuestion();
-        scoreText.text = "wynik: 0/0";
+        scoreText.text = "Score: 0/0";
     }
     //Generating question
     void newQuestion()
@@ -201,7 +201,7 @@ public class QuizGameLevel2 : MonoBehaviour
         //feedbackText.SetActive(false);
         feedbackButton.SetActive(false);
         questionsDone++;
-        scoreText.text = "wynik: " + score.ToString() + "/" + questionsDone.ToString();
+        scoreText.text = "Score: " + score.ToString() + "/" + questionsDone.ToString();
         if (questionsDone < 5)
         {
             newQuestion();
@@ -226,7 +226,7 @@ public class QuizGameLevel2 : MonoBehaviour
         switch (score)
         {
             case 5:
-                resultText.text = "5 / 5 Brawo!";
+                resultText.text = "5 / 5 Great!";
                 break;
             case 4:
                 resultText.text = "4 / 5 :)";
@@ -246,6 +246,20 @@ public class QuizGameLevel2 : MonoBehaviour
             default:
                 resultText.text = score.ToString();
                 break;
+        }
+        
+        // Localize UI buttons
+        Text[] texts = finalResultPanel.GetComponentsInChildren<Text>(true);
+        foreach (Text t in texts)
+        {
+            if (t.text.Trim().IndexOf("Zagraj", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Play Again";
+            }
+            else if (t.text.Trim().IndexOf("gry", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                t.text = "Exit Game";
+            }
         }
     }
 
