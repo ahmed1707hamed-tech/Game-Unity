@@ -57,19 +57,38 @@ The main goal of the game is to:
 
 ---
 
+## 📸 Game Screenshots
+
+### Learning Module
+![Learning Module](screenshots/learning.png)
+
+### Choosing a Level
+![Choosing a Level](screenshots/choose-level.png)
+
+### Quiz Level 1
+![Quiz Level 1](screenshots/level1.png)
+
+### Quiz Level 2
+![Quiz Level 2](screenshots/level2.png)
+
+### Quiz Level 3
+![Quiz Level 3](screenshots/level3.png)
+
+---
+
 ## 🔊 Accessibility Feature
 
 For children who cannot read fluently:
-- The game includes a **voice feature**.
-- When the mouse hovers over an answer button, the content is read aloud.
-- This makes the game more inclusive and easier to use.
+- The game includes a **voice feature**
+- When the mouse hovers over an answer button, the content is read aloud
+- This makes the game more inclusive and easier to use
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Unity Engine**
-- **C# Programming Language**
+- Unity Engine
+- C# Programming Language
 - Unity UI System
 - Audio System for voice feedback
 
@@ -86,3 +105,4 @@ University Project – Educational Game Development
 
 Educational Mini Game  
 Developed for academic purposes and learning enhancement for children.
+
