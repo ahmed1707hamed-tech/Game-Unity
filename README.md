@@ -1,30 +1,88 @@
+# Numbers Quiz Game 🎮
 
-Quiz game for children to learn numbers and counting in English.
+An educational quiz game designed for children to learn **numbers and counting in English** in a fun and interactive way.
 
-GAME DESCRIPTION
-This is a mini game that is part of larger game created as a group project at university, using Unity and C#.
-The mini game has a learning module and 3 levels of quiz type game.
-For children who cannot read fluently, there is a voice that reads aloud the content of the answer buttons when mouse hovers over them.
+---
 
-In level 1 an image of a number poses as the question and there are as many changes to choose the right answer as needed.
+## 📌 Project Overview
 
-In level 2 the goal is to count the fruit and choose the button with appropriate amount. There is only one chance for a question. 
+**Numbers Quiz Game** is a mini educational game developed using **Unity** and **C#**.  
+The game focuses on helping children improve their numerical skills through visual questions, interaction, and audio feedback.
 
-In level 3 there is a timer, which changes color according to the amount of remaining time. 
-The goal is to answer correctly to as many questions possible (about amount of fruit on images) in the time of 30 seconds. 
+This project was created as part of a **university project**, and it was **developed and implemented by Ahmed Hamed**.
 
-GAME SCREENSHOTS
-Learning Module:
-![alt text](https://raw.githubusercontent.com/Mickanie/NumbersQuizGame/master/screenshots/screenshot1.JPG)
+---
 
-Choosing a level:
-![alt text](https://raw.githubusercontent.com/Mickanie/NumbersQuizGame/master/screenshots/screenshot2.JPG)
+## 🎯 Game Objective
 
-Quiz Level 1:
-![alt text](https://raw.githubusercontent.com/Mickanie/NumbersQuizGame/master/screenshots/screenshot3.JPG)
+The main goal of the game is to:
+- Teach children numbers in English
+- Improve counting skills
+- Support children who cannot read fluently through audio assistance
+- Make learning engaging using game mechanics
 
-Quiz Level 2:
-![alt text](https://raw.githubusercontent.com/Mickanie/NumbersQuizGame/master/screenshots/screenshot4.JPG)
+---
 
-Quiz Level 3:
-![alt text](https://raw.githubusercontent.com/Mickanie/NumbersQuizGame/master/screenshots/screenshot5.JPG)
+## 🧩 Game Features
+
+- Learning module for understanding numbers
+- 3 different quiz levels with increasing difficulty
+- Voice assistance that reads answers aloud when hovering over buttons
+- Visual-based questions suitable for children
+- Simple and child-friendly user interface
+
+---
+
+## 🕹️ Game Levels
+
+### 🔹 Level 1: Number Recognition
+- An image of a number is shown as the question.
+- The player can try multiple times until the correct answer is selected.
+- Designed for beginners to recognize numbers easily.
+
+---
+
+### 🔹 Level 2: Counting Fruits
+- The player must count the number of fruits shown on the screen.
+- Only **one attempt** is allowed per question.
+- Encourages focus and accuracy.
+
+---
+
+### 🔹 Level 3: Timed Challenge
+- A **30-second timed quiz**.
+- The timer changes color depending on the remaining time.
+- The goal is to answer as many questions correctly as possible before time runs out.
+- Tests speed and counting skills under pressure.
+
+---
+
+## 🔊 Accessibility Feature
+
+For children who cannot read fluently:
+- The game includes a **voice feature**.
+- When the mouse hovers over an answer button, the content is read aloud.
+- This makes the game more inclusive and easier to use.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Unity Engine**
+- **C# Programming Language**
+- Unity UI System
+- Audio System for voice feedback
+
+---
+
+## 👨‍💻 Developer
+
+**Ahmed Hamed**  
+University Project – Educational Game Development
+
+---
+
+## 📚 Project Type
+
+Educational Mini Game  
+Developed for academic purposes and learning enhancement for children.
